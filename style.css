@@ -39,7 +39,7 @@ body{
 
 .hero h1{
     font-family: 'Sacramento',cursive;
-    font-size: 8rem;
+    font-size: 5rem;
 }
 .hero p{
     font-size: 2rem;
@@ -76,6 +76,6 @@ html{
 /* Handphone */
 @media(max-width:576px){
 html{
-    font-size: 50%;
+    font-size: 60%;
 }
 }
