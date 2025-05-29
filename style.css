@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 :root{
     --pink: #f14e95;
     --bg: #0a0a0a;
@@ -5,8 +9,12 @@
 }
 
 body{
-    font-size : 1.2re;
+    font-size : 1.2rem;
     font-family: 'Work Sans',sans-serif;
+     min-height: 4000px;
+     overflow-x:hidden ;
+    margin: 0;
+    padding: 0;
 }
 .hero::before{
     content: '';
@@ -21,8 +29,9 @@ body{
     background-image: url(img/andres-hernandez-mhnvcqKJ31Y-unsplash.png);
     z-index: -1;
     filter:saturate();
-    object-fit:cover;
-    
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
 }
 .hero h1, .hero h4, .hero p{
      text-shadow: 
@@ -46,7 +55,7 @@ body{
 }
 
 .hero h4{
-    font-size: 2.5;
+    font-size: 2.5rem;
 }
 
 .hero a{
@@ -58,24 +67,70 @@ body{
     background-color: var(--pink);
     color: white;
 }
+.mynavbar .offcanvas{
+    height: 100vh;
+}
+.mynavbar{
+    background-color: rgba(255, 255, 255, 0.5) ;
+    backdrop-filter:blur(2px);
 
-/* Media query */
-/* Laptop */
-@media(max-width:992px){
-html{
-    font-size: 75%;
 }
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title{
+    font-family: 'Sacramento', cursive;
+    font-size: 2.2rem;
 }
 
-/* Tablet */
-@media(max-width:768px){
-html{
-    font-size: 65%;
+.mynavbar .nav-link{
+    font-weight: 400;
+    text-transform: uppercase;
 }
+
+.home{
+    background: url(./img/kier-in-sight-archives-Tuo1C7bvkv8-unsplash.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -5rem;
+    padding-top: 9rem;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-/* Handphone */
-@media(max-width:576px){
-html{
-    font-size: 60%;
+.home h2{
+    color: var(--pink);
+    font-size: 4rem;
+    font-family: 'Sacramento',cursive;
+    font-weight: bold;
 }
+
+.home h3{
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 1rem;
 }
+
+.home p{
+    font-size: 1.1rem;
+    color: #666;
+
+}
+
+/* Media Queryt */
+/* laptop */
+@media (max-width: 992px){
+    html{
+        font-size: 75%;
+    }
+}
+
+@media (max-width:768px){
+    html{
+        font-size: 65%;
+    }
+}
+
+@media(max-width: 576px){
+    html{
+        font-size: 60%;
+    }
+} 
+
