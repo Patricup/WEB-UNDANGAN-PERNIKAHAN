@@ -35,7 +35,7 @@
         </main>
     </section>
 
-            <nav class="navbar navbar-expand-md bg-transparan sticky-top mynavbar">
+            <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
                 <div class="container">
                     <a class="navbar-brand" href="#">Patri & someone</a>
                     <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -88,6 +88,21 @@
             seconds: { root: 'Detik', lambda: (root, n) => n > 1 ? root  : root }
         },
     });     
+
+
+
+  const navbar = document.querySelector('.mynavbar');
+  const hero = document.querySelector('#hero');
+
+  window.addEventListener('scroll', () => {
+    const heroBottom = hero.offsetTop + hero.offsetHeight;
+    if (window.scrollY > heroBottom - 100) {
+      navbar.classList.add('show');
+    } else {
+      navbar.classList.remove('show');
+    }
+  });
+
 
     </script>
 </body>

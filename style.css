@@ -11,10 +11,10 @@
 body{
     font-size : 1.2rem;
     font-family: 'Work Sans',sans-serif;
-     min-height: 4000px;
-     overflow-x:hidden ;
+    overflow-x:hidden ;
     margin: 0;
     padding: 0;
+    min-height: 4000px;
 }
 .hero::before{
     content: '';
@@ -28,7 +28,6 @@ body{
     background-position: center;
     background-image: url(img/andres-hernandez-mhnvcqKJ31Y-unsplash.png);
     z-index: -1;
-    filter:saturate();
     max-width: 100%;
     max-height: 100%;
     overflow: hidden;
@@ -44,6 +43,7 @@ body{
 .hero{
     min-height: 100vh;
     position: relative;
+    overflow-x:hidden ;
 }
 
 .hero h1{
@@ -70,20 +70,24 @@ body{
 .mynavbar .offcanvas{
     height: 100vh;
 }
-.mynavbar{
-    background-color: rgba(255, 255, 255, 0.5) ;
-    backdrop-filter:blur(2px);
 
-}
+.mynavbar{
+    background-color: rgba(255, 255, 255, 0.6) !important;
+} 
+
 .mynavbar .navbar-brand, .mynavbar .offcanvas-title{
     font-family: 'Sacramento', cursive;
     font-size: 2.2rem;
+    
 }
-
+.mynavbar .navbar-brand{
+    white-space: nowrap;
+}
 .mynavbar .nav-link{
     font-weight: 400;
     text-transform: uppercase;
 }
+
 
 .home{
     background: url(./img/kier-in-sight-archives-Tuo1C7bvkv8-unsplash.png);
@@ -131,6 +135,9 @@ body{
 @media(max-width: 576px){
     html{
         font-size: 60%;
+        
     }
+    
 } 
+
 
