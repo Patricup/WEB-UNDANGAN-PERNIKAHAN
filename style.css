@@ -27,6 +27,7 @@ body{
     background-size: cover;
     background-position: center;
     background-image: url(img/andres-hernandez-mhnvcqKJ31Y-unsplash.png);
+    filter: grayscale();
     z-index: -1;
     max-width: 100%;
     max-height: 100%;
@@ -90,7 +91,7 @@ body{
 
 
 .home{
-    background: url(./img/kier-in-sight-archives-Tuo1C7bvkv8-unsplash.png);
+    background: url(./img/ame-chan-InEMM2kIys0-unsplash.png);
     background-size: cover;
     min-height: 100vh;
     margin-top: -5rem;
@@ -118,12 +119,93 @@ body{
 
 }
 
+.home .couple{
+    margin-top: 4rem;
+}
+
+.home .couple h3{
+    font-family:'Sacramento',cursive ;
+    font-size: 50px;
+    color: var(--pink);
+}
+
+.home .couple img{
+    width: 100%;
+}
+
+.home .heart{
+    width: 50px; 
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%) translatey(65px);
+}
+
+.home .heart i{
+    margin: auto;
+    color: var(--pink);
+}
+
+.info{
+    background-color: black;
+    color: white;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.info h2{
+    color: var(--pink);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+.info .alamat {
+    font-size: 1.1rem;
+}
+
+.info .description{
+    font-weight: 300;
+    font: 1rem;
+}
+
+.info .card{
+    background-color: rgba(255, 255, 255, 0.3)!important;
+    color: white;
+    border: 1px solid #999;
+}
+
+.info .card-header{
+    border: 1px solid #999;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.info .footer{
+    border: 1px solid #999;
+    font-size: 1rem;
+    font-weight: 0.9rem;
+
+}
 /* Media Queryt */
+/* extra large  */
+@media (max-width: 1200px){
+   .home .heart {
+    transform: translatex(-50%) translatey(40px);
+   }
+}
+
 /* laptop */
 @media (max-width: 992px){
     html{
         font-size: 75%;
     }
+    .home .heart {
+    display: none;
+   }
 }
 
 @media (max-width:768px){
